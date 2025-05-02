@@ -20,7 +20,7 @@ def dosya_sec():
     if dosya_yolu:
         pdf_metin=pdf_metni_cikar(dosya_yolu)
         metni_ses_cevir(pdf_metin, "ses.mp3")
-        os.system("afplay kaydet.mp3")
+        os.system("afplay ses.mp3") #mac için varsayılan seslendirici ve oynatıcı start komutu windowslar için veya open .... ses.mp3
 #tkinter arayüzü
 pencre=tk.Tk()
 pencre.title("sesli kitap")
